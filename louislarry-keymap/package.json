@@ -1,0 +1,73 @@
+{
+  "name": "louislarry-keymap",
+  "displayName": "louislarry.keymap",
+  "description": "Helpful keybindings for Louis",
+  "publisher": "Louis Larry",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.43.0"
+  },
+  "categories": [
+    "Keymaps"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "contributes": {
+    "keybindings": [
+      {
+        "key": "shift+cmd+[",
+        "command": "workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus"
+      },
+      {
+        "key": "shift+cmd+]",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus"
+      },
+      {
+        "key": "alt+b",
+        "command": "cursorWordLeft"
+      },
+      {
+        "key": "alt+f",
+        "command": "cursorWordRight"
+      },
+      {
+        "key": "alt+d",
+        "command": "deleteWordRight",
+        "when": "textInputFocus && !editorReadonly"
+      },
+      {
+        "key": "ctrl+shift+n",
+        "command": "cursorDownSelect",
+        "when": "textInputFocus"
+      },
+      {
+        "key": "ctrl+shift+n",
+        "command": "list.expandSelectionDown",
+        "when": "listFocus && listSupportsMultiselect && !inputFocus"
+      },
+      {
+        "key": "ctrl+shift+p",
+        "command": "cursorUpSelect",
+        "when": "textInputFocus"
+      },
+      {
+        "key": "ctrl+shift+p",
+        "command": "list.expandSelectionUp",
+        "when": "listFocus && listSupportsMultiselect && !inputFocus"
+      },
+      {
+        "key": "ctrl-f",
+        "command": "list.expand",
+        "when": "listFocus && !inputFocus"
+      },
+      {
+        "key": "ctrl-b",
+        "command": "list.collapse",
+        "when": "listFocus && !inputFocus"
+      }
+    ]
+  }
+}
