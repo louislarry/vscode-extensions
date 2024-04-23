@@ -3,15 +3,16 @@
   "displayName": "louislarry.keymap",
   "description": "Helpful keybindings for Louis",
   "publisher": "Louis Larry",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/louislarry/vscode-extension.git"
+  },
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.43.0"
   },
   "categories": [
     "Keymaps"
-  ],
-  "activationEvents": [
-    "*"
   ],
   "contributes": {
     "keybindings": [
